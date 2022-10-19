@@ -16,7 +16,8 @@ const Feed = () => {
         setPodcastList(podcasts);
       }
     })();
-  }, [toggleLoading]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const { setPodcast } = usePodcast();
 
