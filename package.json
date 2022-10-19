@@ -44,6 +44,8 @@
     ]
   },
   "devDependencies": {
-    "@types/styled-components": "^5.1.26"
+    "@testing-library/cypress": "^8.0.3",
+    "@types/styled-components": "^5.1.26",
+    "cypress": "^10.10.0"
   }
 }
