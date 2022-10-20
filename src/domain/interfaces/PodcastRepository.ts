@@ -1,5 +1,5 @@
-import PodcastDetail from "../models/PodcastDetail";
+import { Podcast } from "../models/PodcastDetail";
 
 export default interface PodcastRepository {
-  getPodcastDetail(): Promise<PodcastDetail>;
+  getPodcastDetail(podcastId: string): Promise<Podcast>;
 }

@@ -42,5 +42,3 @@ const getPodcastList = async (): Promise<Entry[]> => {
   console.log("From UI", podcastList);
   return podcastList;
 };
-
-export { getPodcastList };
