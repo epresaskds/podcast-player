@@ -4,6 +4,9 @@ export const Wrapper = styled.section`
   display: flex;
   padding: 20px;
   align-items: flex-start;
+  max-width: 980px;
+  align-self: center;
+  width: 100%;
 `;
 
 export const Card = styled.div.attrs(() => ({ "data-testid": "episode-card" }))`

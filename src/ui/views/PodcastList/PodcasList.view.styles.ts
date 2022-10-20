@@ -18,5 +18,7 @@ export const Wrapper = styled.div`
   padding: 40px;
   display: flex;
   flex-direction: column;
-  /* margin-top: 80px; */
+  max-width: 980px;
+  align-self: center;
+  width: 100%;
 `;

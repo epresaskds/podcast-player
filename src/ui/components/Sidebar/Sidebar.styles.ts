@@ -7,7 +7,9 @@ export const Wrapper = styled.aside`
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  width: 300px;
+  width: 230px;
+  max-width: 300px;
+  min-width: 230px;
   border: 2px solid var(--color-gray-light);
 `;
 

@@ -19,4 +19,11 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: var(--font-family-montserrat)
   }
+
+  .App {
+    display: flex;
+    flex-direction: column;
+    
+    width: 100vw;
+  }
 `;
