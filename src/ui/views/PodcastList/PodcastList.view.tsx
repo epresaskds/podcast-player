@@ -3,7 +3,10 @@ import { Card } from "../../components/Card";
 import { PodcastListProps } from "../_types/PodcastListView";
 import { Grid, LinkWrapper, Wrapper } from "./PodcasList.view.styles";
 
-const PodcastListView = ({ podcastList }: PodcastListProps) => {
+const PodcastListView = ({
+  podcastList,
+  onSelectedPodcast,
+}: PodcastListProps) => {
   return (
     <Wrapper>
       <Grid>
@@ -11,6 +14,7 @@ const PodcastListView = ({ podcastList }: PodcastListProps) => {
           <LinkWrapper
             key={podcast.id.attributes["im:id"]}
             to={`podcast/${podcast.id.attributes["im:id"]}`}
+            onClick={() => onSelectedPodcast(podcast)}
           >
             <Card
               imgUrl={

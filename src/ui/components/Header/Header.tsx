@@ -7,13 +7,13 @@ import {
   HeaderLink,
 } from "./Header.styles";
 
-const Header = () => {
+const Header = ({ isLoading }: { isLoading: boolean }) => {
   return (
     <HeaderWrapper>
       <HeaderLink to="/">
         <HeaderTitle>Podcaster</HeaderTitle>
       </HeaderLink>
-      <Spinner visible />
+      <Spinner visible={isLoading} />
     </HeaderWrapper>
   );
 };

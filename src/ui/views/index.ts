@@ -1,5 +1,5 @@
 import { PodcastListView } from "./PodcastList";
-import { PodcastDetailView } from "./PodcastDetail";
+import { PodcastView } from "./Podcast";
 import { EpisodeView } from "./Episode";
 
-export { PodcastListView, PodcastDetailView, EpisodeView };
+export { PodcastListView, PodcastView, EpisodeView };
