@@ -57,11 +57,11 @@ Since this project doesn't have a backend, the data is retrieved from [iTunes' d
 1. Clone the repo
    via https:
    ```sh
-   git clone https://github.com/epresas/podcaster.git
+   git clone https://github.com/epresas/podcast-player.git
    ```
    or via ssh:
    ```sh
-   git clone git@github.com:epresaskds/podcaster.git
+   git clone git@github.com:epresaskds/podcast-player.git
    ```
 2. Install dependencies
    ```sh
@@ -76,7 +76,7 @@ Since this project doesn't have a backend, the data is retrieved from [iTunes' d
    yarn start
    ```
    or
-    ```sh
+   ```sh
    npm run start
    ```
 
