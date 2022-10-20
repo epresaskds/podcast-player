@@ -1,10 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-interface SpinnerProps {
-  readonly visible: boolean;
-}
-
 export const Wrapper = styled.aside`
   border-radius: 5px;
   display: flex;

@@ -6,7 +6,7 @@ export const Wrapper = styled.section`
   align-items: flex-start;
 `;
 
-export const Card = styled.div`
+export const Card = styled.div.attrs(() => ({ "data-testid": "episode-card" }))`
   border-radius: 5px;
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
   border: 2px solid var(--color-gray-light);
