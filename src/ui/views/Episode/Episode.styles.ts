@@ -13,7 +13,7 @@ export const Card = styled.div`
   background-color: var(--color-white);
   padding: 30px 20px;
   max-width: 760px;
-  margin-left: 80px;
+  margin-left: 60px;
 `;
 
 export const Description = styled.p`
