@@ -50,6 +50,5 @@ const getEpisodeDetail = (episode: any) => ({
 
 const getPodcastDetail = async (podcastId: string): Promise<Podcast> => {
   const podcastDetail = await PodcastApplication.getPodcast(podcastId);
-  console.log("From UI", podcastDetail);
   return podcastDetail;
 };

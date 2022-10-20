@@ -45,7 +45,6 @@ const Feed = () => {
     const filteredList = podcastList.filter((podcast) => {
       const title = podcast["im:name"].label.toLowerCase();
       const artist = podcast["im:artist"].label.toLowerCase();
-      // debugger;
       return artist.includes(searchTerm) || title.includes(searchTerm);
     });
     setInputValue(searchTerm);
