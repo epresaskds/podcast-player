@@ -1,5 +1,5 @@
 {
-  "name": "idtxtt",
+  "name": "podcaster",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,6 +10,7 @@
     "@types/node": "^16.11.59",
     "@types/react": "^18.0.20",
     "@types/react-dom": "^18.0.6",
+    "html-react-parser": "^3.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "6",
@@ -22,7 +23,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test:e2e:ui": "cypress open --e2e -b chrome",
+    "test:e2e:cli": "cypress run --e2e -b chrome"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +46,8 @@
     ]
   },
   "devDependencies": {
-    "@types/styled-components": "^5.1.26"
+    "@testing-library/cypress": "^8.0.3",
+    "@types/styled-components": "^5.1.26",
+    "cypress": "^10.10.0"
   }
 }
