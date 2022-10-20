@@ -35,7 +35,6 @@ export const getCachedPodcastDetail = async (
     Math.ceil(new Date().getTime() - new Date(dateOfInclusion).getTime()) /
       (1000 * 3600 * 24)
   );
-  console.log("DIAS", differenceInDays);
 
   if (differenceInDays > 1 || cachedPodcastId !== podcastId) {
     const podcastDetail = await getPodcastDetail(podcastId);
@@ -48,7 +47,6 @@ export const getCachedPodcastDetail = async (
 
 const getPodcastDetail = async (podcastId: string): Promise<Podcast> => {
   const podcastDetail = await PodcastApplication.getPodcast(podcastId);
-  console.log("From UI", podcastDetail);
   return podcastDetail;
 };
 

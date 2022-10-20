@@ -23,7 +23,6 @@ const SKELLETON_DATA = {
 };
 
 const Sidebar = ({ imageURl, title, description, author, id }: Props) => {
-  console.log("...", id);
   return (
     <Wrapper>
       <Section className="image">

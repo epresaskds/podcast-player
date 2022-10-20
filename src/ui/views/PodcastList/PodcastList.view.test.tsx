@@ -6,27 +6,26 @@ import PodcastListView from "./PodcastList.view";
 const podcastMock = [
   {
     "im:name": {
-      label:
-        "Broken Record with Rick Rubin, Malcolm Gladwell, Bruce Headlam and Justin Richmond",
+      label: "No Jumper",
     },
     "im:image": [
       {
         label:
-          "https://is2-ssl.mzstatic.com/image/thumb/Podcasts126/v4/0c/a2/bb/0ca2bba3-5c0d-1c1f-b6ce-2e6ab4320b47/mza_1819810769375974713.jpg/55x55bb.png",
+          "https://is5-ssl.mzstatic.com/image/thumb/Podcasts112/v4/55/3e/bc/553ebc1f-75e1-6c3e-c9a3-de3bfc0a11e0/mza_11110635484606225985.png/55x55bb.png",
         attributes: {
           height: "55",
         },
       },
       {
         label:
-          "https://is1-ssl.mzstatic.com/image/thumb/Podcasts126/v4/0c/a2/bb/0ca2bba3-5c0d-1c1f-b6ce-2e6ab4320b47/mza_1819810769375974713.jpg/60x60bb.png",
+          "https://is2-ssl.mzstatic.com/image/thumb/Podcasts112/v4/55/3e/bc/553ebc1f-75e1-6c3e-c9a3-de3bfc0a11e0/mza_11110635484606225985.png/60x60bb.png",
         attributes: {
           height: "60",
         },
       },
       {
         label:
-          "https://is2-ssl.mzstatic.com/image/thumb/Podcasts126/v4/0c/a2/bb/0ca2bba3-5c0d-1c1f-b6ce-2e6ab4320b47/mza_1819810769375974713.jpg/170x170bb.png",
+          "https://is1-ssl.mzstatic.com/image/thumb/Podcasts112/v4/55/3e/bc/553ebc1f-75e1-6c3e-c9a3-de3bfc0a11e0/mza_11110635484606225985.png/170x170bb.png",
         attributes: {
           height: "170",
         },
@@ -34,7 +33,7 @@ const podcastMock = [
     ],
     summary: {
       label:
-        "From Rick Rubin, Malcolm Gladwell, Bruce Headlam, and Justin Richmond. The musicians you love talk about their life, inspiration, and craft. Then play. iHeartMedia is the exclusive podcast partner of Pushkin Industries.",
+        "The Coolest Podcast In The World. Hosted by Adam22 Watch these interviews on YouTube right here: https://www.youtube.com/nojumper",
     },
     "im:price": {
       label: "Get",
@@ -50,79 +49,47 @@ const podcastMock = [
       },
     },
     rights: {
-      label: "© 2022 Pushkin Industries",
+      label: "© All rights reserved",
     },
     title: {
-      label:
-        "Broken Record with Rick Rubin, Malcolm Gladwell, Bruce Headlam and Justin Richmond - Pushkin Industries",
+      label: "No Jumper - No Jumper",
     },
     link: {
       attributes: {
         rel: "alternate",
         type: "text/html",
-        href: "https://podcasts.apple.com/us/podcast/broken-record-with-rick-rubin-malcolm-gladwell-bruce/id1311004083?uo=2",
+        href: "https://podcasts.apple.com/us/podcast/no-jumper/id1001659715?uo=2",
       },
     },
     id: {
       label:
-        "https://podcasts.apple.com/us/podcast/broken-record-with-rick-rubin-malcolm-gladwell-bruce/id1311004083?uo=2",
+        "https://podcasts.apple.com/us/podcast/no-jumper/id1001659715?uo=2",
       attributes: {
-        "im:id": "1311004083",
+        "im:id": "1001659715",
       },
     },
     "im:artist": {
-      label: "Pushkin Industries",
-      attributes: {
-        href: "https://podcasts.apple.com/us/artist/pushkin-industries/1465988663?uo=2",
-      },
+      label: "No Jumper",
     },
     category: {
       attributes: {
-        "im:id": "1310",
-        term: "Music",
+        "im:id": "1525",
+        term: "Music Interviews",
         scheme:
-          "https://podcasts.apple.com/us/genre/podcasts-music/id1310?uo=2",
-        label: "Music",
+          "https://podcasts.apple.com/us/genre/podcasts-music-music-interviews/id1525?uo=2",
+        label: "Music Interviews",
       },
     },
     "im:releaseDate": {
-      label: "2022-10-14T00:00:00-07:00",
+      label: "2022-10-18T13:19:00-07:00",
       attributes: {
-        label: "October 14, 2022",
+        label: "October 18, 2022",
       },
     },
   },
   {
     "im:name": {
-      label:
-        "Broken Record with Rick Rubin, Malcolm Gladwell, Bruce Headlam and Justin Richmond",
-    },
-    "im:image": [
-      {
-        label:
-          "https://is2-ssl.mzstatic.com/image/thumb/Podcasts126/v4/0c/a2/bb/0ca2bba3-5c0d-1c1f-b6ce-2e6ab4320b47/mza_1819810769375974713.jpg/55x55bb.png",
-        attributes: {
-          height: "55",
-        },
-      },
-      {
-        label:
-          "https://is1-ssl.mzstatic.com/image/thumb/Podcasts126/v4/0c/a2/bb/0ca2bba3-5c0d-1c1f-b6ce-2e6ab4320b47/mza_1819810769375974713.jpg/60x60bb.png",
-        attributes: {
-          height: "60",
-        },
-      },
-      {
-        label:
-          "https://is2-ssl.mzstatic.com/image/thumb/Podcasts126/v4/0c/a2/bb/0ca2bba3-5c0d-1c1f-b6ce-2e6ab4320b47/mza_1819810769375974713.jpg/170x170bb.png",
-        attributes: {
-          height: "170",
-        },
-      },
-    ],
-    summary: {
-      label:
-        "From Rick Rubin, Malcolm Gladwell, Bruce Headlam, and Justin Richmond. The musicians you love talk about their life, inspiration, and craft. Then play. iHeartMedia is the exclusive podcast partner of Pushkin Industries.",
+      label: "Ebro in the Morning Podcast",
     },
     "im:price": {
       label: "Get",
@@ -131,37 +98,57 @@ const podcastMock = [
         currency: "USD",
       },
     },
-    "im:contentType": {
-      attributes: {
-        term: "Podcast",
-        label: "Podcast",
+    "im:image": [
+      {
+        label:
+          "https://is5-ssl.mzstatic.com/image/thumb/Podcasts122/v4/0f/95/2b/0f952b75-2da3-a1a4-55ee-5e24eb34a2ed/mza_16604615367747989507.jpg/55x55bb.png",
+        attributes: {
+          height: "55",
+        },
       },
+      {
+        label:
+          "https://is2-ssl.mzstatic.com/image/thumb/Podcasts122/v4/0f/95/2b/0f952b75-2da3-a1a4-55ee-5e24eb34a2ed/mza_16604615367747989507.jpg/60x60bb.png",
+        attributes: {
+          height: "60",
+        },
+      },
+      {
+        label:
+          "https://is2-ssl.mzstatic.com/image/thumb/Podcasts122/v4/0f/95/2b/0f952b75-2da3-a1a4-55ee-5e24eb34a2ed/mza_16604615367747989507.jpg/170x170bb.png",
+        attributes: {
+          height: "170",
+        },
+      },
+    ],
+    summary: {
+      label:
+        "Ebro, Laura Stylez and Rosenberg share their thoughts on everything from music, relationships, politics and more Monday - Friday 5am - 10am ET.",
     },
-    rights: {
-      label: "© 2022 Pushkin Industries",
+    "im:artist": {
+      label: "HOT 97's Ebro in the Morning",
     },
     title: {
-      label:
-        "Broken Record with Rick Rubin, Malcolm Gladwell, Bruce Headlam and Justin Richmond - Pushkin Industries",
+      label: "Ebro in the Morning Podcast - HOT 97's Ebro in the Morning",
     },
     link: {
       attributes: {
         rel: "alternate",
         type: "text/html",
-        href: "https://podcasts.apple.com/us/podcast/broken-record-with-rick-rubin-malcolm-gladwell-bruce/id1311004083?uo=2",
+        href: "https://podcasts.apple.com/us/podcast/ebro-in-the-morning-podcast/id1236941416?uo=2",
       },
     },
     id: {
       label:
-        "https://podcasts.apple.com/us/podcast/broken-record-with-rick-rubin-malcolm-gladwell-bruce/id1311004083?uo=2",
+        "https://podcasts.apple.com/us/podcast/ebro-in-the-morning-podcast/id1236941416?uo=2",
       attributes: {
-        "im:id": "1311004083",
+        "im:id": "1236941416",
       },
     },
-    "im:artist": {
-      label: "Pushkin Industries",
+    "im:contentType": {
       attributes: {
-        href: "https://podcasts.apple.com/us/artist/pushkin-industries/1465988663?uo=2",
+        term: "Podcast",
+        label: "Podcast",
       },
     },
     category: {
@@ -174,35 +161,34 @@ const podcastMock = [
       },
     },
     "im:releaseDate": {
-      label: "2022-10-14T00:00:00-07:00",
+      label: "2022-10-18T07:35:00-07:00",
       attributes: {
-        label: "October 14, 2022",
+        label: "October 18, 2022",
       },
     },
   },
   {
     "im:name": {
-      label:
-        "Broken Record with Rick Rubin, Malcolm Gladwell, Bruce Headlam and Justin Richmond",
+      label: "Dolly Parton's America",
     },
     "im:image": [
       {
         label:
-          "https://is2-ssl.mzstatic.com/image/thumb/Podcasts126/v4/0c/a2/bb/0ca2bba3-5c0d-1c1f-b6ce-2e6ab4320b47/mza_1819810769375974713.jpg/55x55bb.png",
+          "https://is3-ssl.mzstatic.com/image/thumb/Podcasts115/v4/58/b8/16/58b8165d-d674-16cd-3822-36d8acad0151/mza_5834995761907664558.jpg/55x55bb.png",
         attributes: {
           height: "55",
         },
       },
       {
         label:
-          "https://is1-ssl.mzstatic.com/image/thumb/Podcasts126/v4/0c/a2/bb/0ca2bba3-5c0d-1c1f-b6ce-2e6ab4320b47/mza_1819810769375974713.jpg/60x60bb.png",
+          "https://is5-ssl.mzstatic.com/image/thumb/Podcasts115/v4/58/b8/16/58b8165d-d674-16cd-3822-36d8acad0151/mza_5834995761907664558.jpg/60x60bb.png",
         attributes: {
           height: "60",
         },
       },
       {
         label:
-          "https://is2-ssl.mzstatic.com/image/thumb/Podcasts126/v4/0c/a2/bb/0ca2bba3-5c0d-1c1f-b6ce-2e6ab4320b47/mza_1819810769375974713.jpg/170x170bb.png",
+          "https://is2-ssl.mzstatic.com/image/thumb/Podcasts115/v4/58/b8/16/58b8165d-d674-16cd-3822-36d8acad0151/mza_5834995761907664558.jpg/170x170bb.png",
         attributes: {
           height: "170",
         },
@@ -210,7 +196,7 @@ const podcastMock = [
     ],
     summary: {
       label:
-        "From Rick Rubin, Malcolm Gladwell, Bruce Headlam, and Justin Richmond. The musicians you love talk about their life, inspiration, and craft. Then play. iHeartMedia is the exclusive podcast partner of Pushkin Industries.",
+        "In this intensely divided moment, one of the few things everyone still seems to agree on is Dolly Parton—but why? That simple question leads to a deeply personal, historical, and musical rethinking of one of America’s great icons. Join us for a 9-episode journey into the Dollyverse. Hosted by Jad Abumrad. Produced and reported by Shima Oliaee. Dolly Parton’s America is a production from OSM Audio and WNYC Studios.",
     },
     "im:price": {
       label: "Get",
@@ -226,71 +212,69 @@ const podcastMock = [
       },
     },
     rights: {
-      label: "© 2022 Pushkin Industries",
+      label: "© WNYC Studios & OSM Audio",
     },
     title: {
-      label:
-        "Broken Record with Rick Rubin, Malcolm Gladwell, Bruce Headlam and Justin Richmond - Pushkin Industries",
+      label: "Dolly Parton's America - WNYC Studios & OSM Audio",
     },
     link: {
       attributes: {
         rel: "alternate",
         type: "text/html",
-        href: "https://podcasts.apple.com/us/podcast/broken-record-with-rick-rubin-malcolm-gladwell-bruce/id1311004083?uo=2",
+        href: "https://podcasts.apple.com/us/podcast/dolly-partons-america/id1481398762?uo=2",
       },
     },
     id: {
       label:
-        "https://podcasts.apple.com/us/podcast/broken-record-with-rick-rubin-malcolm-gladwell-bruce/id1311004083?uo=2",
+        "https://podcasts.apple.com/us/podcast/dolly-partons-america/id1481398762?uo=2",
       attributes: {
-        "im:id": "1311004083",
+        "im:id": "1481398762",
       },
     },
     "im:artist": {
-      label: "Pushkin Industries",
+      label: "WNYC Studios & OSM Audio",
       attributes: {
-        href: "https://podcasts.apple.com/us/artist/pushkin-industries/1465988663?uo=2",
+        href: "https://podcasts.apple.com/us/artist/wnyc/127981066?uo=2",
       },
     },
     category: {
       attributes: {
-        "im:id": "1310",
-        term: "Music",
+        "im:id": "1524",
+        term: "Music History",
         scheme:
-          "https://podcasts.apple.com/us/genre/podcasts-music/id1310?uo=2",
-        label: "Music",
+          "https://podcasts.apple.com/us/genre/podcasts-music-music-history/id1524?uo=2",
+        label: "Music History",
       },
     },
     "im:releaseDate": {
-      label: "2022-10-14T00:00:00-07:00",
+      label: "2021-07-06T09:00:00-07:00",
       attributes: {
-        label: "October 14, 2022",
+        label: "July 6, 2021",
       },
     },
   },
   {
     "im:name": {
-      label:
-        "Broken Record with Rick Rubin, Malcolm Gladwell, Bruce Headlam and Justin Richmond",
+      label: "A History of Rock Music in 500 Songs",
     },
     "im:image": [
       {
         label:
-          "https://is2-ssl.mzstatic.com/image/thumb/Podcasts126/v4/0c/a2/bb/0ca2bba3-5c0d-1c1f-b6ce-2e6ab4320b47/mza_1819810769375974713.jpg/55x55bb.png",
+          "https://is5-ssl.mzstatic.com/image/thumb/Podcasts124/v4/88/18/59/881859a5-f344-c249-f4b9-3d9b62add05a/mza_16428964146354887078.png/55x55bb.png",
         attributes: {
           height: "55",
         },
       },
       {
         label:
-          "https://is1-ssl.mzstatic.com/image/thumb/Podcasts126/v4/0c/a2/bb/0ca2bba3-5c0d-1c1f-b6ce-2e6ab4320b47/mza_1819810769375974713.jpg/60x60bb.png",
+          "https://is4-ssl.mzstatic.com/image/thumb/Podcasts124/v4/88/18/59/881859a5-f344-c249-f4b9-3d9b62add05a/mza_16428964146354887078.png/60x60bb.png",
         attributes: {
           height: "60",
         },
       },
       {
         label:
-          "https://is2-ssl.mzstatic.com/image/thumb/Podcasts126/v4/0c/a2/bb/0ca2bba3-5c0d-1c1f-b6ce-2e6ab4320b47/mza_1819810769375974713.jpg/170x170bb.png",
+          "https://is3-ssl.mzstatic.com/image/thumb/Podcasts124/v4/88/18/59/881859a5-f344-c249-f4b9-3d9b62add05a/mza_16428964146354887078.png/170x170bb.png",
         attributes: {
           height: "170",
         },
@@ -298,7 +282,7 @@ const podcastMock = [
     ],
     summary: {
       label:
-        "From Rick Rubin, Malcolm Gladwell, Bruce Headlam, and Justin Richmond. The musicians you love talk about their life, inspiration, and craft. Then play. iHeartMedia is the exclusive podcast partner of Pushkin Industries.",
+        "Andrew Hickey presents a history of rock music from 1938 to 1999, looking at five hundred songs that shaped the genre.",
     },
     "im:price": {
       label: "Get",
@@ -314,45 +298,41 @@ const podcastMock = [
       },
     },
     rights: {
-      label: "© 2022 Pushkin Industries",
+      label: "© 2021 A History of Rock Music in 500 Songs",
     },
     title: {
-      label:
-        "Broken Record with Rick Rubin, Malcolm Gladwell, Bruce Headlam and Justin Richmond - Pushkin Industries",
+      label: "A History of Rock Music in 500 Songs - Andrew Hickey",
     },
     link: {
       attributes: {
         rel: "alternate",
         type: "text/html",
-        href: "https://podcasts.apple.com/us/podcast/broken-record-with-rick-rubin-malcolm-gladwell-bruce/id1311004083?uo=2",
+        href: "https://podcasts.apple.com/us/podcast/a-history-of-rock-music-in-500-songs/id1437402802?uo=2",
       },
     },
     id: {
       label:
-        "https://podcasts.apple.com/us/podcast/broken-record-with-rick-rubin-malcolm-gladwell-bruce/id1311004083?uo=2",
+        "https://podcasts.apple.com/us/podcast/a-history-of-rock-music-in-500-songs/id1437402802?uo=2",
       attributes: {
-        "im:id": "1311004083",
+        "im:id": "1437402802",
       },
     },
     "im:artist": {
-      label: "Pushkin Industries",
-      attributes: {
-        href: "https://podcasts.apple.com/us/artist/pushkin-industries/1465988663?uo=2",
-      },
+      label: "Andrew Hickey",
     },
     category: {
       attributes: {
-        "im:id": "1310",
-        term: "Music",
+        "im:id": "1524",
+        term: "Music History",
         scheme:
-          "https://podcasts.apple.com/us/genre/podcasts-music/id1310?uo=2",
-        label: "Music",
+          "https://podcasts.apple.com/us/genre/podcasts-music-music-history/id1524?uo=2",
+        label: "Music History",
       },
     },
     "im:releaseDate": {
-      label: "2022-10-14T00:00:00-07:00",
+      label: "2022-10-07T03:12:00-07:00",
       attributes: {
-        label: "October 14, 2022",
+        label: "October 7, 2022",
       },
     },
   },
