@@ -2,13 +2,21 @@ import { Image } from "../../../domain/models/Entry/Image";
 import { Card } from "../../components/Card";
 import { PodcastListProps } from "../_types/PodcastListView";
 import { Grid, LinkWrapper, Wrapper } from "./PodcasList.view.styles";
+import { Filter } from "./_components/Filter";
 
 const PodcastListView = ({
   podcastList,
   onSelectedPodcast,
+  onFilter,
+  inputValue,
 }: PodcastListProps) => {
   return (
     <Wrapper>
+      <Filter
+        value={inputValue}
+        onFilter={onFilter}
+        placeholder="filter podcasts"
+      />
       <Grid>
         {podcastList.map((podcast) => (
           <LinkWrapper
