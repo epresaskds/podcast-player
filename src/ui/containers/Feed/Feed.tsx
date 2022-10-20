@@ -6,6 +6,8 @@ import { usePodcast } from "../../context/Podcast.context";
 
 const Feed = () => {
   const [podcastList, setPodcastList] = useState<Entry[]>([]);
+  const [filteredList, setFilteredList] = useState<Entry[]>([]);
+  const [inputValue, setInputValue] = useState("");
   const { toggleLoading } = usePodcast();
   useEffect(() => {
     (async () => {
@@ -14,6 +16,7 @@ const Feed = () => {
       if (podcasts) {
         toggleLoading(false);
         setPodcastList(podcasts);
+        setFilteredList(podcasts);
       }
     })();
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -37,10 +40,24 @@ const Feed = () => {
     }
   };
 
+  const handleFilterList = (e: React.FormEvent<HTMLInputElement>) => {
+    const searchTerm = e.currentTarget.value;
+    const filteredList = podcastList.filter((podcast) => {
+      const title = podcast["im:name"].label.toLowerCase();
+      const artist = podcast["im:artist"].label.toLowerCase();
+      // debugger;
+      return artist.includes(searchTerm) || title.includes(searchTerm);
+    });
+    setInputValue(searchTerm);
+    setFilteredList(filteredList);
+  };
+
   return (
     <PodcastListView
-      podcastList={podcastList}
+      podcastList={filteredList}
       onSelectedPodcast={(podcast) => handleSelectedPodcast(podcast)}
+      inputValue={inputValue}
+      onFilter={handleFilterList}
     />
   );
 };

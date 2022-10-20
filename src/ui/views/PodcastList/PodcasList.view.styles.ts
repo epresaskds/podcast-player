@@ -16,5 +16,7 @@ export const LinkWrapper = styled(Link)`
 
 export const Wrapper = styled.div`
   padding: 40px;
-  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 80px; */
 `;

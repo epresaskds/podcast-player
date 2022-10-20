@@ -18,6 +18,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   padding: 0 20px 20px;
+  max-width: 230px;
 `;
 
 export const Avatar = styled.img.attrs(({ src }: ImageProps) => ({
