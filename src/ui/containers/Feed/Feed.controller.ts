@@ -26,7 +26,6 @@ export const getCachedPodcastList = async (): Promise<Entry[] | undefined> => {
   const differenceInDays =
     Math.ceil(new Date().getTime() - new Date(dateOfInclusion).getTime()) /
     (1000 * 3600 * 24);
-  console.log("DIAS", differenceInDays);
 
   if (differenceInDays > 1) {
     const podcastList = await getPodcastList();

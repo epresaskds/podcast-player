@@ -13,7 +13,7 @@ export const Title = styled.span`
 
 const EpisodeCount = ({ episodeCount }: EpisodeCountProps) => {
   return (
-    <Wrapper>
+    <Wrapper data-testid="episode-count">
       <Title>Episodes: {episodeCount}</Title>
     </Wrapper>
   );

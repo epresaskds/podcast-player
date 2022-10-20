@@ -5,14 +5,8 @@ import EpisodeList from "./_components/EpisodeList";
 import { usePodcast } from "../../context/Podcast.context";
 import { Wrapper, Content } from "./Podcast.styles";
 
-const PodcastView = ({
-  episodes,
-  episodeCount,
-  sidebarDetail,
-}: PodcastProps) => {
+const PodcastView = ({ episodes, episodeCount }: PodcastProps) => {
   const { imageURl, description, title, id, author } = usePodcast();
-
-  // console.log("podcastView", podcastContext);
   return (
     <Wrapper>
       <Sidebar

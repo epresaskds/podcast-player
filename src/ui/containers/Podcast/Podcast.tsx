@@ -14,20 +14,12 @@ const Podcast = () => {
   const [podcastDetail, setPodcastDetail] = useState<PodcastResult>();
   const [totalEpisodes, setTotalEpisodes] = useState(0);
   const [episodeList, setEpisodeList] = useState<PodcastDetail[]>([]);
-  const [sidebarDetail, setSidebarDetail] = useState<PodcastDetail[]>();
   const { toggleLoading } = usePodcast();
 
   const getEpisodes = (rawInfo: PodcastResult) => {
     const detail = filterInfo(rawInfo, "podcastEpisode");
 
     setEpisodeList(detail);
-  };
-
-  const getSideBarInfo = (rawInfo: PodcastResult) => {
-    const detail = filterInfo(rawInfo, "track");
-    if (detail) {
-      setSidebarDetail(detail);
-    }
   };
 
   const getPodcastInfo = useCallback(async () => {
@@ -51,17 +43,10 @@ const Podcast = () => {
   useEffect(() => {
     if (podcastDetail) {
       getEpisodes(podcastDetail);
-      getSideBarInfo(podcastDetail);
     }
   }, [podcastDetail]);
 
-  return (
-    <PodcastView
-      episodeCount={totalEpisodes}
-      episodes={episodeList}
-      sidebarDetail={sidebarDetail}
-    />
-  );
+  return <PodcastView episodeCount={totalEpisodes} episodes={episodeList} />;
 };
 
 export default Podcast;
