@@ -32,6 +32,7 @@ export const Avatar = styled.img.attrs(({ src }: ImageProps) => ({
 `;
 
 export const Title = styled(TruncatedText)`
+  color: var(--color-black);
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 4px;
@@ -40,4 +41,5 @@ export const Title = styled(TruncatedText)`
 
 export const Author = styled(TruncatedText)`
   font-size: 12px;
+  color: var(--color-gray-medium);
 `;
