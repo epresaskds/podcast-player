@@ -7,7 +7,7 @@ const Card = ({ title, imgUrl, author }: CardProps) => {
     <Wrapper>
       <Avatar src={imgUrl} />
       <Title>{title}</Title>
-      <Author>author: {author}</Author>
+      <Author>Author: {author}</Author>
     </Wrapper>
   );
 };
