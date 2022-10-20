@@ -1,0 +1,33 @@
+export default interface PodcastDetail {
+  artistName: string;
+  artworkUrl100: string;
+  artworkUrl30: string;
+  artworkUrl60: string;
+  artworkUrl600: string;
+  collectionCensoredName: string;
+  collectionExplicitness: string;
+  collectionHdPrice: number;
+  collectionId: number;
+  collectionName: string;
+  collectionPrice: number;
+  collectionViewUrl: string;
+  country: string;
+  currency: string;
+  feedUrl: string;
+  genreIds: string[];
+  genres: string[];
+  kind: string;
+  primaryGenreName: string;
+  releaseDate: Date;
+  trackCensoredName: string;
+  trackCount: number;
+  trackExplicitness: string;
+  trackHdPrice: number;
+  trackHdRentalPrice: number;
+  trackId: number;
+  trackName: string;
+  trackPrice: number;
+  trackRentalPrice: number;
+  trackViewUrl: string;
+  wrapperType: string;
+}
