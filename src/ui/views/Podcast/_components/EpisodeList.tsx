@@ -36,21 +36,6 @@ const TitleLink = styled(Link)`
 `;
 
 const EpisodeList = ({ episodes }: EpisodeListProps) => {
-  // const [rowData] = useState(
-  //   episodes?.map((episode) => ({
-  //     title: episode.trackName,
-  //     date: episode.releaseDate,
-  //     duration: episode.trackTimeMillis,
-  //     id: episode.trackId,
-  //   }))
-  // );
-
-  // const [columnDefs] = useState([
-  //   { field: "title", cellRenderer: EpisodeLink },
-  //   { field: "date" },
-  //   { field: "duration" },
-  // ]);
-
   const convertDate = (timeStamp: string) => {
     const pad = (s: number) => (s < 10 ? `0${s}` : s);
     var d = new Date(timeStamp);
@@ -58,32 +43,19 @@ const EpisodeList = ({ episodes }: EpisodeListProps) => {
   };
 
   return (
-    // <div className="ag-theme-alpine" style={{ height: 400, width: "100%" }}>
-    //   <AgGridReact rowData={rowData} columnDefs={columnDefs}></AgGridReact>
-    // </div>
-    <>
-      <List>
-        {episodes?.map(
-          ({ trackName, releaseDate, trackTimeMillis, trackId }) => (
-            //   {
-            //   title: episode.trackName,
-            //   date: episode.releaseDate,
-            //   duration: episode.trackTimeMillis,
-            //   id: episode.trackId,
-            // }
-            <ListItem key={trackId}>
-              <Title>
-                <TitleLink to={`episode/${trackId}`}>{trackName}</TitleLink>
-              </Title>
-              <ReleaseDate>{convertDate(releaseDate)}</ReleaseDate>
-              <Duration>
-                {new Date(trackTimeMillis).toISOString().slice(11, 19)}
-              </Duration>
-            </ListItem>
-          )
-        )}
-      </List>
-    </>
+    <List data-testid="episode-list">
+      {episodes?.map(({ trackName, releaseDate, trackTimeMillis, trackId }) => (
+        <ListItem key={trackId}>
+          <Title>
+            <TitleLink to={`episode/${trackId}`}>{trackName}</TitleLink>
+          </Title>
+          <ReleaseDate>{convertDate(releaseDate)}</ReleaseDate>
+          <Duration>
+            {new Date(trackTimeMillis).toISOString().slice(11, 19)}
+          </Duration>
+        </ListItem>
+      ))}
+    </List>
   );
 };
 
