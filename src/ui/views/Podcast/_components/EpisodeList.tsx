@@ -37,7 +37,7 @@ const TitleLink = styled(Link)`
 const EpisodeList = ({ episodes }: EpisodeListProps) => {
   const convertDate = (timeStamp: string) => {
     const pad = (s: number) => (s < 10 ? `0${s}` : s);
-    var d = new Date(timeStamp);
+    const d = new Date(timeStamp);
     return [pad(d.getDate()), pad(d.getMonth() + 1), d.getFullYear()].join("/");
   };
 
